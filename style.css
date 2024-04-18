@@ -1,0 +1,32 @@
+body {
+  background-color: black; /* Black background */
+  color: white; /* White font color */
+  font-family: sans-serif; /* Default sans-serif font */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #303; /* Dark gray background for header */
+  color: white; /* White font color for header */
+  padding: 15px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold; /* Bold header */
+}
+
+main {
+  padding: 20px;
+}
+
+main h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+main p {
+  line-height: 1.6;
+}
