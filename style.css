@@ -1,0 +1,45 @@
+body {
+    font-family: Arial;
+    background: #141E30; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #243B55, #141E30); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    margin: 0;
+    color: snow;
+}
+
+.tabMenu {
+    width: 100%;
+    background: hsl(0, 0%, 93%);
+    height: auto;
+    margin: 0;
+    overflow: auto;
+    padding: 0;
+    list-style-type: none;
+    color: black;
+    font-weight: 900;
+}
+.tabMenu li {
+    cursor: pointer;
+    float: left;
+    background: hsl(0, 0%, 93%);
+    padding: 10px 0;
+    margin: 0;
+   }
+.tabMenu span {
+    padding: 12px 20px;
+}
+.tabMenu li.active {
+    background: hsl(0, 0%, 31%);   
+    color: #fff;
+}
+.tabMenu li:hover {
+    background: hsl(0, 0%, 31%);
+    color: #fff;
+}
+.tabContent {
+    display: none;
+}
+.tabs {
+    margin: 15px 0 0;
+}
