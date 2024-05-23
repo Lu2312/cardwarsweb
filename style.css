@@ -43,3 +43,31 @@ body {
 .tabs {
     margin: 15px 0 0;
 }
+
+/* Estilo básico para checkboxes */
+input[type="checkbox"] {
+    display: inline-block;
+    -webkit-appearance: none; /* Remover el estilo por defecto en WebKit/Blink */
+    -moz-appearance: none; /* Remover el estilo por defecto en Firefox */
+    margin: 1px;
+    width: 20px; /* Ancho del checkbox */
+    height: 20px; /* Altura del checkbox */
+    border: 2px solid #999; /* Borde del checkbox */
+    border-radius: 16px; /* Bordes redondeados */
+    background-color: #e7e6e7; /* Color de fondo */
+    cursor: pointer; /* Cambiar el cursor a tipo puntero */
+    transform: scale(0.85)
+}
+
+    /* Estilo cuando el checkbox está marcado */
+    input[type="checkbox"]:checked {
+        background-color: #7b68ee; /* Color de fondo cuando está seleccionado */
+        border-color: #4b0082; /* Color del borde cuando está seleccionado */
+    }
+
+/* Estilo para el texto que se muestra al seleccionar el checkbox */
+#text, #text2 {
+    font-family: Arial, sans-serif; /* Tipo de fuente */
+    color: #333; /* Color del texto */
+    padding: 8px; /* Espaciado interno */
+}

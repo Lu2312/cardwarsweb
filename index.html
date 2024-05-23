@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
+    <title>CardWarsKingdom</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -79,16 +79,53 @@
             <p>Los tres héroes por tiempo limitado se pueden encontrar y comprar utilizando el exploit de cultivo de dátiles. Accede a tu inventario durante el exploit y los héroes aparecerán para comprar.</p>
 
             <ul>
-                <li>Rey Helado: 25 de diciembre de 2016</li>
-                <li>BMO: 20 de octubre de 2016</li>
+                <li>BMO: 1 de mayo de 2016</li>
+                <li>Rey Helado: 1 de mayo de 2016</li>
                 <li>Conde de Limón agrío: 1 de mayo de 2016</li>
+            </ul>
+
+            <h3>Comprar heroes de tiempo limintado</h3>
+
+            <ol>
+                <li>Entrar al inventario</li>
+                <li>Salir a configuraciones y apagar los datos o el wifi</li>
+                <li>Cambiar la fecha a 01/Mayo/2016</li>
+                <li>Entrar a el juego en el inventario y cambiar de héroe hasta que aparezca (BMO, Lemon agrio o Rey Helado), presionar el botón para comprar</li>
+                <li>Salir de nuevo y colocan la fecha actual y luego prenden los datos o el wifi</li>
+                <li>Regresan al juego y pagan las 3000 gemas del héroe</li>
+            </ol>
+
+
+            <h3>Acceder a mazmorras especiales</h3>
+            <ol>
+                <li>Entrar al calabozo</li>
+                <li>Salir a configuraciones y apagar los datos o el wifi</li>
+                <li>Cambiar la fecha a 02/sep/2016</li>
+                <li>Entrar a el juego en el calabozo y entrar al evento y entrar al menú sin pagar los corazones</li>
+                <li>Salir de nuevo y colocan la fecha actual y luego prenden los datos o el wifi</li>
+                <li>Regresan al juego y pagan los corazones para acceder a la mazmorra</li>
+            </ol>
+            <h3>Mazmorras disponibles:</h3>
+            <ul>
+                <li>Plain Jane: Inicio: 01/sep/2016 - Fin 08/oct/2016</li>
+                <li>Dragón de maíz: Inicio: 18/oct/2016 - Fin 20/oct/2016</li>
+                <li>Alec Sander: Inicio: 18/oct/2016 - Fin 20/oct/2016</li>
+                <li>EnergyDrink: Inicio: 18/oct/2016 - Fin 20/oct/2016</li>
+                <li>Lady Sacarab: Inicio: 18/nov/2016 - Fin 23/nov/2016</li>
+                <li>Ancient Scholar: Inicio: 18/nov/2016 - Fin 23/nov/2016</li>
+                <li>Comida Fina: Inicio: 02/sep/2016 - Fin 05/sep/2016</li>
+            </ul>
+
+
+            <h3>Heroes del juego</h3>
+            <ul>
                 <li>Marceline</li>
                 <li>Dulce princesa</li>
                 <li>Finn</li>
                 <li>Jake el perro</li>
                 <li>Princesa Grumosa</li>
-            </ul>
 
+            </ul>
         </div>
         <div class="tabContent contact">
             <h3>Calabozo de ingredientes</h3>
@@ -96,10 +133,14 @@
                 Listado de ingredientes obteniedos en el calabozo
             </p>
 
-            <iframe src="tabla.html"
-                    style="width: 1000px; height: 800px;">
-            </iframe>
+            Español: <input type="checkbox" id="español" onclick="myFunction()">
+            <p id="text" style="display:none">Mostrar en español!</p>
 
+            <p>
+                English:   <input type="checkbox" id="ingles" onclick="myFunction()">
+            <p id="text2" style="display:none">Display english!</p>
+            <p>
+                <script src="ingredient.js"></script>
 
 
         </div>

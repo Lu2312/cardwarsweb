@@ -30,6 +30,5 @@
 
             activeTab = '.'+sessionStorage.getItem("tabMenu");         
             (activeTab) ? document.querySelector(".tabMenu " + activeTab).click() : document.querySelector(
-            ".tabMenu .dashboard").click();
-                
+                ".tabMenu .dashboard").click();       
         });
