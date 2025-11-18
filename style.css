@@ -1,73 +1,402 @@
-body {
-    font-family: Arial;
-    background: #141E30; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #243B55, #141E30); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 100vh;
-    margin: 30px;
-    color: snow;
+/* ============================================
+   CARDWARS KINGDOM - MAIN STYLES
+   ============================================ */
+
+/* -------- Base Styles -------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #141E30;
+    background: -webkit-linear-gradient(to top, #243B55, #141E30);
+    background: linear-gradient(to top, #243B55, #141E30);
+    min-height: 100vh;
+    padding: 20px;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* -------- Navigation Tabs -------- */
 .tabMenu {
     width: 100%;
-    background: hsl(0, 0%, 93%);
-    height: auto;
-    margin: 0;
-    overflow: auto;
-    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto 20px;
+    background: #ededed;
     list-style-type: none;
-    color: black;
-    font-weight: 900;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
 }
+
+/* Global language selector */
+.global-language {
+    margin: 10px auto 20px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255,255,255,0.08);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.global-language label {
+    font-weight: 600;
+    color: #E5C545;
+}
+
+.global-language select {
+    background: #243B55;
+    color: #fff;
+    border: 1px solid #4f4f4f;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.global-language select:focus {
+    outline: 2px solid #E5C545;
+}
+
 .tabMenu li {
     cursor: pointer;
-    float: left;
-    background: hsl(0, 0%, 93%);
-    padding: 10px 0;
-    margin: 0;
-   }
+    flex: 1;
+    min-width: 120px;
+    background: #ededed;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
 .tabMenu span {
-    padding: 12px 20px;
+    display: block;
+    padding: 15px 20px;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
 }
-.tabMenu li.active {
-    background: hsl(0, 0%, 31%);   
-    color: #fff;
-}
+
 .tabMenu li:hover {
-    background: hsl(0, 0%, 31%);
+    background: #4f4f4f;
+}
+
+.tabMenu li:hover span {
     color: #fff;
 }
+
+.tabMenu li.active {
+    background: #4f4f4f;
+}
+
+.tabMenu li.active span {
+    color: #fff;
+}
+
+/* Focus state for accessibility */
+.tabMenu span:focus {
+    outline: 2px solid #E5C545;
+    outline-offset: -2px;
+}
+
+/* -------- Tab Content -------- */
+.tabs {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .tabContent {
     display: none;
-}
-.tabs {
-    margin: 15px 0 0;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo básico para checkboxes */
-input[type="checkbox"] {
+.tabContent.active {
+    display: block;
+}
+
+/* -------- Typography -------- */
+.main-title {
+    font-size: 2.5em;
+    color: #E5C545;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color: #E5C545;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+h3 {
+    color: #E5C545;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+p {
+    color: #f0f0f0;
+    margin-bottom: 15px;
+}
+
+/* -------- Sections -------- */
+.welcome-section {
+    margin-bottom: 40px;
+}
+
+.download-section {
+    margin-top: 30px;
+}
+
+.download-group {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border-left: 4px solid #E5C545;
+}
+
+.download-links {
+    list-style: none;
+    padding: 0;
+}
+
+.download-links li {
+    margin-bottom: 10px;
+}
+
+.download-link {
+    color: #00FF00;
+    text-decoration: none;
+    padding: 10px 15px;
     display: inline-block;
-    -webkit-appearance: none; /* Remover el estilo por defecto en WebKit/Blink */
-    -moz-appearance: none; /* Remover el estilo por defecto en Firefox */
-    margin: 1px;
-    width: 20px; /* Ancho del checkbox */
-    height: 20px; /* Altura del checkbox */
-    border: 2px solid #999; /* Borde del checkbox */
-    border-radius: 16px; /* Bordes redondeados */
-    background-color: #e7e6e7; /* Color de fondo */
-    cursor: pointer; /* Cambiar el cursor a tipo puntero */
-    transform: scale(0.85)
+    background: rgba(0, 255, 0, 0.1);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
 }
 
-    /* Estilo cuando el checkbox está marcado */
-    input[type="checkbox"]:checked {
-        background-color: #7b68ee; /* Color de fondo cuando está seleccionado */
-        border-color: #4b0082; /* Color del borde cuando está seleccionado */
+.download-link:hover {
+    background: rgba(0, 255, 0, 0.2);
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(0, 255, 0, 0.3);
+}
+
+.download-link:focus {
+    outline: 2px solid #00FF00;
+    outline-offset: 2px;
+}
+
+/* -------- Content Placeholder -------- */
+.content-placeholder {
+    text-align: center;
+    padding: 60px 20px;
+    opacity: 0.7;
+}
+
+/* -------- Language Selector (Radio Buttons) -------- */
+.language-selector {
+    margin-bottom: 30px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.radio-label:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.radio-label input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #999;
+    border-radius: 50%;
+    background-color: #e7e6e7;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.radio-label input[type="radio"]:checked {
+    background-color: #7b68ee;
+    border-color: #4b0082;
+    box-shadow: 0 0 10px rgba(123, 104, 238, 0.5);
+}
+
+.radio-label input[type="radio"]:focus {
+    outline: 2px solid #E5C545;
+    outline-offset: 2px;
+}
+
+.radio-label span {
+    color: #f0f0f0;
+    font-weight: 500;
+}
+
+/* -------- Table Container -------- */
+.table-container {
+    margin-top: 20px;
+    display: none;
+}
+
+.table-iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 900px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* Tablets and small desktops */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 15px;
     }
 
-/* Estilo para el texto que se muestra al seleccionar el checkbox */
-#text, #text2 {
-    font-family: Arial, sans-serif; /* Tipo de fuente */
-    color: #333; /* Color del texto */
-    padding: 8px; /* Espaciado interno */
+    .main-title {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .tabContent {
+        padding: 20px;
+    }
+
+    .tabMenu {
+        flex-direction: column;
+    }
+
+    .tabMenu li {
+        min-width: 100%;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .tabMenu li:last-child {
+        border-bottom: none;
+    }
+
+    .download-group {
+        padding: 15px;
+    }
+
+    .table-iframe {
+        height: 600px;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .main-title {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    h3 {
+        font-size: 1.1em;
+    }
+
+    .tabContent {
+        padding: 15px;
+    }
+
+    .tabMenu span {
+        padding: 12px 15px;
+        font-size: 0.9em;
+    }
+
+    .download-link {
+        display: block;
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .table-iframe {
+        height: 500px;
+    }
+
+    .content-placeholder {
+        padding: 40px 15px;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 1400px) {
+    .tabs,
+    .tabMenu {
+        max-width: 1400px;
+    }
+}
+
+/* -------- Print Styles -------- */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+
+    .tabMenu {
+        display: none;
+    }
+
+    .tabContent {
+        display: block !important;
+        background: white;
+        box-shadow: none;
+    }
+
+    .download-link {
+        color: blue;
+        text-decoration: underline;
+    }
 }
