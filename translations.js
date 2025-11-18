@@ -27,7 +27,53 @@ const translations = {
         heroes: {
             title: "Héroes de CardWars",
             info: "Aquí encontrarás información sobre los héroes del juego.",
-            comingSoon: "Contenido próximamente..."
+            comingSoon: "Contenido próximamente...",
+            // Hero cards
+            finn: {
+                name: "Finn",
+                desc: "El héroe humano de Ooo. Finn es valiente y siempre está listo para la aventura. Sus cartas se especializan en ataques directos y habilidades de combate cuerpo a cuerpo.",
+                type: "Tipo:",
+                typeValue: "Guerrero",
+                specialty: "Especialidad:",
+                specialtyValue: "Ataque físico",
+                ability: "Habilidad única:",
+                abilityValue: "Golpe heroico"
+            },
+            jake: {
+                name: "Jake",
+                desc: "El mejor amigo de Finn y un perro mágico que puede cambiar de forma. Jake aporta versatilidad al juego con sus habilidades de transformación y defensa.",
+                typeValue: "Mago",
+                specialtyValue: "Transformación",
+                abilityValue: "Elasticidad mágica"
+            },
+            bmo: {
+                name: "BMO",
+                desc: "La consola de videojuegos viviente. BMO ofrece soporte técnico y habilidades especiales que pueden cambiar el curso de la batalla.",
+                typeValue: "Soporte",
+                specialtyValue: "Habilidades técnicas",
+                abilityValue: "Análisis de sistema"
+            },
+            iceKing: {
+                name: "Ice King",
+                desc: "El rey del hielo con poderes de congelación. Sus cartas se enfocan en control del campo y ralentización de enemigos.",
+                typeValue: "Mago de hielo",
+                specialtyValue: "Control y congelación",
+                abilityValue: "Ventisca helada"
+            },
+            pb: {
+                name: "Princess Bubblegum",
+                desc: "La princesa científica del Reino Dulce. Combina ciencia y magia para crear poderosas estrategias.",
+                typeValue: "Científica",
+                specialtyValue: "Estrategia y ciencia",
+                abilityValue: "Experimento dulce"
+            },
+            marceline: {
+                name: "Marceline",
+                desc: "La reina vampiro rockera. Sus ataques son agresivos y puede drenar vida de los oponentes.",
+                typeValue: "Vampiro",
+                specialtyValue: "Drenaje de vida",
+                abilityValue: "Mordida vampírica"
+            }
         },
         // Calendar page
         calendar: {
@@ -66,7 +112,53 @@ const translations = {
         heroes: {
             title: "CardWars Heroes",
             info: "Here you will find information about the game's heroes.",
-            comingSoon: "Content coming soon..."
+            comingSoon: "Content coming soon...",
+            // Hero cards
+            finn: {
+                name: "Finn",
+                desc: "The human hero of Ooo. Finn is brave and always ready for adventure. His cards specialize in direct attacks and melee combat abilities.",
+                type: "Type:",
+                typeValue: "Warrior",
+                specialty: "Specialty:",
+                specialtyValue: "Physical attack",
+                ability: "Unique ability:",
+                abilityValue: "Heroic strike"
+            },
+            jake: {
+                name: "Jake",
+                desc: "Finn's best friend and a magical dog that can shapeshift. Jake brings versatility to the game with his transformation and defense abilities.",
+                typeValue: "Mage",
+                specialtyValue: "Transformation",
+                abilityValue: "Magic elasticity"
+            },
+            bmo: {
+                name: "BMO",
+                desc: "The living video game console. BMO offers technical support and special abilities that can change the course of battle.",
+                typeValue: "Support",
+                specialtyValue: "Technical skills",
+                abilityValue: "System analysis"
+            },
+            iceKing: {
+                name: "Ice King",
+                desc: "The ice king with freezing powers. His cards focus on field control and enemy slowing.",
+                typeValue: "Ice mage",
+                specialtyValue: "Control and freezing",
+                abilityValue: "Frozen blizzard"
+            },
+            pb: {
+                name: "Princess Bubblegum",
+                desc: "The scientist princess of the Candy Kingdom. Combines science and magic to create powerful strategies.",
+                typeValue: "Scientist",
+                specialtyValue: "Strategy and science",
+                abilityValue: "Sweet experiment"
+            },
+            marceline: {
+                name: "Marceline",
+                desc: "The rocker vampire queen. Her attacks are aggressive and can drain life from opponents.",
+                typeValue: "Vampire",
+                specialtyValue: "Life drain",
+                abilityValue: "Vampire bite"
+            }
         },
         // Calendar page
         calendar: {
